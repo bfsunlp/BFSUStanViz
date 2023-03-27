@@ -48,7 +48,7 @@ Currently Supported Languages:
 "zh" ------> [Chinese Simplified]
 ```
 
-# Command Line
+### Command Line
 
 If you are using command prompt or Anaconda Prompt, please use the following command in Windows Terminal/Anaconda Prompt with administrator previlige and make sure the conda environment BFSUStanViz is activated.
 
@@ -71,7 +71,7 @@ Please be also noted that the algorithm is multicore optimized in directory mode
 However, the original stanza running on "cpu" mode is rather slow. You may try to
 enble "gpu" with cuda capability.
 
-# GUI Support
+### GUI Support
 
 You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.0" through the following link:
 
