@@ -41,7 +41,7 @@ conda create  --name BFSUStanViz --file conda-spec-list.txt
 ### Download Stanza Model
 
 ```bash
-python download_model.py --model ko --model_dir D:\bfsunlp\Resources\Stanza Packages
+python download_model.py --model ko
 ```
 
 stanza models will not come with BFSUStanViz, you should download a supported model before using either Prompt or GUI.
