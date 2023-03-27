@@ -5,7 +5,7 @@
   </a>
   <h1><a href="https://github.com/bfsunlp/BFSUStanViz">BFSUStanViz</a> - Python</h1>
 <!-- Short description: -->
-  <h3>A Stanza Python Commandline & Graphic Wrapper - multicore optimized - for Education & Research Only</h3>
+  <h3>A Stanza Python Commandline & Graphic Wrapper</h3>
 </div>
 
 
