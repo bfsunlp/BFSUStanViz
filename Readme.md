@@ -71,10 +71,10 @@ Please be also noted that the algorithm is multicore optimized in directory mode
 However, the original stanza running on "cpu" mode is rather slow. You may try to
 enble "gpu" with cuda capability.
 
-### Wxpython GUI Support
+### wxpython GUI
 
 ```bash
-python .\bin\ zh_tagger_launcher.py
+python .\bin\zh_tagger_launcher.py
 ```
 
 "zh" can be replaced with other supported language acronym.
