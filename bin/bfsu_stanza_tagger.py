@@ -177,7 +177,7 @@ class MainFrame(wx.Frame):
         self.lang = lang
         self.language = language
         self.cwd = os.getcwd()
-        self.model_dir = "../resources/model"
+        self.model_dir = ".\\resources\\model"
         self.model_list = {}
         # print(os.listdir(self.model_dir))
         wx.Frame.__init__(self, parent, id, title="BFSU Stanza Tagger - [%s] v1.0" % self.language, size=(900, 700))
@@ -372,7 +372,7 @@ class MainFrame(wx.Frame):
         dlg = wx.DirDialog(self, "Open the output folder:",
                            style=wx.DD_DEFAULT_STYLE
                                  | wx.DD_DIR_MUST_EXIST
-                                 # | wx.DD_CHANGE_DIR
+                           # | wx.DD_CHANGE_DIR
                            )
         if dlg.ShowModal() == wx.ID_OK:
             dir_path = dlg.GetPath()
@@ -482,6 +482,8 @@ class MainFrame(wx.Frame):
                                                   download_method="none",
                                                   use_gpu=False)
                         elif job == "pos_tag":
+                            print(self.lang)
+                            print(os.path.abspath(self.model_dir))
                             nlp = stanza.Pipeline(lang=self.lang, dir=self.model_dir,
                                                   processors="tokenize,lemma,pos",
                                                   download_method="none",
@@ -539,22 +541,5 @@ class MainFrame(wx.Frame):
         # print(mstatus)
 
 
-class App(wx.App):
-
-    def __init__(self, redirect=False, filename=None, useBestVisual=False, clearSigInt=True):
-        super().__init__(redirect, filename, useBestVisual, clearSigInt)
-        self.frame = None
-
-    def OnInit(self):
-        # self.cwd = os.getcwd()
-        # self.icon_path = os.path.join(os.path.join(self.cwd, 'ico'), 'exe.png')
-        self.frame = MainFrame(parent=None, id=-1, lang="zh", language="Chinese Simplified")
-        # self.frame.SetIcon(wx.Icon(self.icon_path))
-        self.frame.Show()
-        self.SetTopWindow(self.frame)
-        return True
-
-
 if __name__ == "__main__":
-    app = App()
-    app.MainLoop()
+    pass
