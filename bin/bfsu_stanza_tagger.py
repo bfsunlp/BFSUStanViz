@@ -507,6 +507,7 @@ class MainFrame(wx.Frame):
                                          job=job,
                                          tag_set=tag_set,
                                          nlp=nlp)
+                        self.run_button.Disable()
                 else:
                     dlg = wx.MessageDialog(self, 'Please download a model first!',
                                            'Warning',
@@ -538,6 +539,7 @@ class MainFrame(wx.Frame):
                                    )
             dlg.ShowModal()
             dlg.Destroy()
+            self.run_button.Enable()
         # print(mstatus)
 
 

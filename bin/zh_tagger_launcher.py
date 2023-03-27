@@ -8,9 +8,11 @@ bfsunlp@gmail.com
 """
 import bin.bfsu_stanza_tagger as bst
 import os
-import stanza
 import wx
 import wx.adv
+
+# Pseudo import for pyinstaller lib package
+import stanza
 import codecs
 import time
 import shutil
@@ -22,7 +24,6 @@ import psutil
 import multiprocessing
 from pubsub import pub
 from wx.lib.wordwrap import wordwrap
-
 
 
 class AppZh(wx.App):
