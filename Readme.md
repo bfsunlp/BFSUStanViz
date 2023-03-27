@@ -38,6 +38,14 @@ https://repo.anaconda.com/archive/Anaconda3-2022.10-Windows-x86_64.exe
 conda create  --name BFSUStanViz --file conda-spec-list.txt
 ```
 
+### Download Stanza Model
+
+```bash
+python download_model.py --model ko --model_dir D:\bfsunlp\Resources\Stanza Packages
+```
+
+stanza models will not come with BFSUStanViz, you should download a supported model before using either Prompt or GUI.
+
 ## Running BFSUStanViz
 
 The current version BFSUStanViz 1.0 support lexical analyzing task, the supported language is keeping updating.
@@ -46,6 +54,7 @@ Currently Supported Languages:
 
 ```bash
 "zh" ------> [Chinese Simplified]
+"ko" ------> [Korean]
 ```
 
 ### Command Line
@@ -69,7 +78,7 @@ python main.py --dir --pos_tag --zh input d:\source output d:\target
 Please be also noted that the algorithm is multicore optimized in directory mode. 
 
 However, the original stanza running on "cpu" mode is rather slow. You may try to
-enble "gpu" with cuda capability.
+enable "gpu" with cuda capability.
 
 ### wxpython GUI
 
@@ -84,4 +93,6 @@ python .\bin\zh_tagger_launcher.py
 You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.0" through the following link:
 
 https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu 
+
+
 
