@@ -5,8 +5,10 @@
   </a>
   <h1><a href="https://github.com/bfsunlp/BFSUStanViz">BFSUStanViz</a> - Python</h1>
 <!-- Short description: -->
-  <h3>A Stanza Commandline & Graphic Wrapper - multicore optimized - for Education & Research Only</h3>
+  <h3>A Stanza Python Commandline & Graphic Wrapper - multicore optimized - for Education & Research Only</h3>
 </div>
+
+
 
 ## Environment Setup
 
@@ -74,3 +76,6 @@ enble "gpu" with cuda capability.
 You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.0" through the following link:
 
 https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu 
+
+
+
