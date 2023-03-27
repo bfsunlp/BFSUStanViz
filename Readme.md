@@ -71,11 +71,17 @@ Please be also noted that the algorithm is multicore optimized in directory mode
 However, the original stanza running on "cpu" mode is rather slow. You may try to
 enble "gpu" with cuda capability.
 
-### GUI Support
+### Wxpython GUI Support
+
+```bash
+python .\bin\ zh_tagger_launcher.py
+```
+
+"zh" can be replaced with other supported language acronym.
+
+### Executable GUI Support
 
 You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.0" through the following link:
 
 https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu 
-
-
 
