@@ -1,4 +1,4 @@
-BFSU Stanza Tagger 1.0 is a Windows GUI wrapper of "stanza" package. This GUI of BFSU Stanza Tagger 1.0 is developed by BFSU NLP team of Beijing Foreign Studies University Corpus Research Group and licensed under MIT Licence. 
+BFSU Stanza Tagger 1.1 is a Windows GUI wrapper of "stanza" package. This GUI of BFSU Stanza Tagger 1.1 is developed by BFSU NLP team of Beijing Foreign Studies University Corpus Research Group and licensed under MIT Licence. 
 
 Copyright © 2022-2023, LIU Dingjia, BFSU Corpus Group.
 
@@ -6,9 +6,9 @@ Stanza is a Python natural language analysis package. It contains tools to conve
 
 Copyright © 2020 Stanford NLP Group.
 
-If you use BFSU Stanza Tagger 1.0 in your work, please cite both of the following items:
+If you use BFSU Stanza Tagger 1.1 in your work, please cite both of the following items:
 
-Dingjia LIU. BFSU Stanza Tagger 1.0. BFSU Corpus Research Group. 2023.
+Dingjia LIU. BFSU Stanza Tagger 1.1. BFSU Corpus Research Group. 2023.
 
 Peng Qi, Yuhao Zhang, Yuhui Zhang, Jason Bolton and Christopher D. Manning. 2020. Stanza: A Python Natural Language Processing Toolkit for Many Human Languages. In Association for Computational Linguistics (ACL) System Demonstrations. 2020.
 

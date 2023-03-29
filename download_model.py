@@ -7,12 +7,14 @@ dingjialiu@gmail.com
 bfsunlp@gmail.com
 """
 
+import os
 import sys
 import stanza
 import stanza.resources.common as sc
 
 if __name__ == "__main__":
-    model_dir = "./resources/model"
+    cwd = os.getcwd()
+    model_dir = os.path.join(cwd, "resources\\model")
     lang = sys.argv[2]
     print(lang)
     try:
