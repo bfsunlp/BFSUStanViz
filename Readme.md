@@ -52,8 +52,8 @@ The current version BFSUStanViz 1.1 support lexical analyzing task, the supporte
 Currently Supported Languages:
 
 ```bash
-"zh" ------> [Chinese Simplified]
 "ko" ------> [Korean]
+"zh" ------> [Chinese Simplified]
 ```
 
 ### Command Line
