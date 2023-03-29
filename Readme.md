@@ -104,7 +104,7 @@ https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu
 ## Updates
 ```bash
 2023-03-26 BFSUStanViz v1.0, BFSU Stanza Tagger 1.0. First issue
-2023-03-26 BFSUStanViz v1.1, BFSU Stanza Tagger 1.1. Fix compatability issues, rewrite lexical_analyzer.
+2023-03-29 BFSUStanViz v1.1, BFSU Stanza Tagger 1.1. Fix compatability issues, rewrite lexical_analyzer.
 ```
 
 ## References
