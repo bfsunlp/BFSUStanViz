@@ -47,12 +47,13 @@ Please be noted that the model downloading option is enabled in "settings" menu 
 
 ## Running BFSUStanViz
 
-The current version BFSUStanViz 1.1 support lexical analyzing task, the supported language is keeping updating.
+The current version BFSUStanViz 1.1 support lexical analyzing task such as tokenization and pos tagging, the supported language is keeping updating.
 
 Currently Supported Languages:
 
 ```bash
 "en" ------> [English]
+"ja" ------> [Jappanese]
 "ko" ------> [Korean]
 "zh" ------> [Chinese Simplified]
 ```
@@ -98,14 +99,14 @@ python .\bin\zh_tagger_launcher.py
 
 ### Executable GUI Support
 
-You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.1" via the following link:
+You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.1" through the following link:
 
 https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu 
 
 ## Updates
 ```bash
 2023-03-26 BFSUStanViz v1.0, BFSU Stanza Tagger 1.0. First issue
-2023-03-29 BFSUStanViz v1.1, BFSU Stanza Tagger 1.1. Fix compatability issues, rewrite lexical_analyzer.
+2023-03-26 BFSUStanViz v1.1, BFSU Stanza Tagger 1.1. Fix compatability issues, rewrite lexical_analyzer.
 ```
 
 ## References
