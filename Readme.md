@@ -52,9 +52,14 @@ The current version BFSUStanViz 1.1 support lexical analyzing task such as token
 Currently Supported Languages:
 
 ```bash
+"de" ------> [German]
 "en" ------> [English]
+"et" ------> [Estonian]
+"fr" ------> [French]
+"it" ------> [Italian]
 "ja" ------> [Japanese]
 "ko" ------> [Korean]
+"ru" ------> [Russian]
 "zh" ------> [Chinese Simplified]
 ```
 

@@ -20,7 +20,7 @@ from pubsub import pub
 from wx.lib.wordwrap import wordwrap
 
 
-class AppEn(wx.App):
+class App(wx.App):
 
     def OnInit(self):
         lang = "en"
@@ -35,5 +35,5 @@ class AppEn(wx.App):
 
 
 if __name__ == "__main__":
-    app = AppEn()
+    app = App()
     app.MainLoop()

@@ -20,7 +20,7 @@ from pubsub import pub
 from wx.lib.wordwrap import wordwrap
 
 
-class AppJa(wx.App):
+class App(wx.App):
 
     def OnInit(self):
         lang = "ja"
@@ -35,5 +35,5 @@ class AppJa(wx.App):
 
 
 if __name__ == "__main__":
-    app = AppJa()
+    app = App()
     app.MainLoop()

@@ -20,7 +20,7 @@ from pubsub import pub
 from wx.lib.wordwrap import wordwrap
 
 
-class AppZh(wx.App):
+class App(wx.App):
 
     def OnInit(self):
         lang = "zh"
@@ -35,5 +35,5 @@ class AppZh(wx.App):
 
 
 if __name__ == "__main__":
-    app = AppZh()
+    app = App()
     app.MainLoop()

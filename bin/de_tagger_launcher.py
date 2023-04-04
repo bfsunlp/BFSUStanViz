@@ -1,15 +1,16 @@
 # -*- coding:utf-8 -*-
 """
-Copyright (c) 2022-2023, LIU Dingjia, BFSUNLP Group.
+Copyright (c) 2022-2023, LIU Dingjia, BFSU NLP Team, BFSU Corpus Research Group.
 All rights reserved.
-Email: 
-dingjialiu@gmail.com
+Email:
 bfsunlp@gmail.com
+dingjialiu@gmail.com
 """
-import bin.source.bfsu_stanza_tagger as bst
+
 import os
 import wx
 import wx.adv
+import source.bfsu_stanza_tagger as bst
 
 # Pseudo import for pyinstaller lib package
 import chardet
@@ -22,8 +23,8 @@ from wx.lib.wordwrap import wordwrap
 class App(wx.App):
 
     def OnInit(self):
-        lang = "ko"
-        language = "Korean"
+        lang = "de"
+        language = "German"
         cwd = os.getcwd()
         frame = bst.MainFrame(parent=None, id=-1, lang=lang, language=language, cwd=cwd)
         icon_path = os.path.join(os.path.join(cwd, 'resources/ico'), 'logo.ico')
