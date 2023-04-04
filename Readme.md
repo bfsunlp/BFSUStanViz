@@ -98,7 +98,7 @@ python .\bin\zh_tagger_launcher.py
 
 ### Executable GUI Support
 
-You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.1" through the following link:
+You may also obtain a windows graphic interface "BFSU Stanza Tagger 1.1" via the following link:
 
 https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu 
 
