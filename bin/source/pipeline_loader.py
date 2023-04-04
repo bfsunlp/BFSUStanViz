@@ -11,7 +11,7 @@ import stanza
 
 
 def load_pipline(lang, task, model_dir, use_gpu=False):
-    l_type1 = ["en", "et", "ja", "ko", "nl", "ru", "zh",]
+    l_type1 = ["en", "et", "ja", "ko", "nl", "ru", "ro", "zh",]
     l_type2 = ["de", "fr", "it",]
 
     if lang in l_type1:
