@@ -59,6 +59,7 @@ Currently Supported Languages:
 "it" ------> [Italian]
 "ja" ------> [Japanese]
 "ko" ------> [Korean]
+"ro" ------> [Romanian]
 "ru" ------> [Russian]
 "zh" ------> [Chinese Simplified]
 ```
