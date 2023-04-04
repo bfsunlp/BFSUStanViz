@@ -53,7 +53,7 @@ Currently Supported Languages:
 
 ```bash
 "en" ------> [English]
-"ja" ------> [Jappanese]
+"ja" ------> [Japanese]
 "ko" ------> [Korean]
 "zh" ------> [Chinese Simplified]
 ```
