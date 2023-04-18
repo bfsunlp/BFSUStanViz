@@ -9,7 +9,7 @@ block_cipher = None
 
 a = Analysis(
     ['zh_tagger_launcher.py'],
-    pathex=['E:\\Pyinstaller\\BFSUStanViz\\bin'],
+    pathex=['', ],
     binaries=[],
     datas=[],
     hiddenimports=[],
@@ -31,7 +31,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='zh_tagger_launcher',
+    name='BFSU Stanza Tagger 1.2 [ZH]',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

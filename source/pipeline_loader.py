@@ -11,15 +11,15 @@ import stanza
 
 
 def load_pipline(lang, task, model_dir, use_gpu=False):
-    l_type1 = ["en", "et", "ja", "ko", "nl", "ru", "zh",]
-    l_type2 = ["de", "fr", "it",]
+    l_type1 = ["en", "et", "ja", "ko", "nl", "ru", "ro", "zh", ]
+    l_type2 = ["de", "fr", "it", ]
 
     if lang in l_type1:
-        task_processors = {"lemma": "tokenize, pos, lemma",
+        task_processors = {"lemmatize": "tokenize, pos, lemma",
                            "tokenize": "tokenize",
                            "pos": "tokenize, pos"}
     elif lang in l_type2:
-        task_processors = {"lemma": "tokenize, mwt, pos, lemma",
+        task_processors = {"lemmatize": "tokenize, mwt, pos, lemma",
                            "tokenize": "tokenize",
                            "pos": "tokenize, mwt, pos",
                            "mwt": "tokenize, mwt"}

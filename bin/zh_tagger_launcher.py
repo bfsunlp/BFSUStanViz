@@ -7,10 +7,10 @@ bfsunlp@gmail.com
 dingjialiu@gmail.com
 """
 
-import source.bfsu_stanza_tagger as bst
 import os
 import wx
 import wx.adv
+import source.bfsu_stanza_tagger as bst
 
 # Pseudo import for pyinstaller lib package
 import chardet
@@ -24,7 +24,7 @@ class App(wx.App):
 
     def OnInit(self):
         lang = "zh"
-        language = "Chinese Simplified"
+        language = "Chinese"
         cwd = os.getcwd()
         frame = bst.MainFrame(parent=None, id=-1, lang=lang, language=language, cwd=cwd)
         icon_path = os.path.join(os.path.join(cwd, 'resources/ico'), 'logo.ico')

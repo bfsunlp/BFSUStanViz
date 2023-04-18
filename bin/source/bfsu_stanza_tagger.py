@@ -8,7 +8,6 @@ dingjialiu@gmail.com
 """
 
 import os
-import stanza
 import wx
 import wx.adv
 import codecs
@@ -260,7 +259,7 @@ class MainFrame(wx.Frame):
 
         self.mode_sizer = wx.BoxSizer(wx.HORIZONTAL)
 
-        self.task_names = ["POS Tagging", "Tokenization"]
+        self.task_names = ["POS Tagging", "Tokenization", "Lemmatization"]
         self.choose_task = wx.RadioBox(self.panel, label="Choose a task:", choices=self.task_names)
         self.FontCtrls.append(self.choose_task)
         self.mode_sizer.Add(self.choose_task, 1, wx.EXPAND | wx.ALL, 5)
@@ -476,6 +475,8 @@ class MainFrame(wx.Frame):
                         task = "pos"
                     elif task == "Tokenization":
                         task = "tokenize"
+                    elif task == "Lemmatization":
+                        task = "lemmatize"
                     else:
                         task = None
                     if tag_set == "Treebank POS":
@@ -499,7 +500,7 @@ class MainFrame(wx.Frame):
 
                     if nlp:
                         num_of_files = len(file_paths)
-                        self.process_gauge.SetRange(num_of_files+1)
+                        self.process_gauge.SetRange(num_of_files + 1)
                         ProcessingThread(model_path=self.model_dir,
                                          lang=self.lang,
                                          input_files=file_paths,
@@ -532,7 +533,7 @@ class MainFrame(wx.Frame):
             index = self.output_file_list_ctrl.InsertItem(self.output_file_list_ctrl.GetItemCount(), mstatus[1])
             self.output_file_list_ctrl.SetItem(index, 1, "success")
         elif mstatus[0] == "finished":
-            self.process_gauge.SetValue(mstatus[1]+1)
+            self.process_gauge.SetValue(mstatus[1] + 1)
             dlg = wx.MessageDialog(self, 'Tasked is finished, %d file(s) was(were) processed!' % mstatus[1],
                                    'Info',
                                    wx.OK | wx.ICON_INFORMATION
@@ -541,7 +542,6 @@ class MainFrame(wx.Frame):
             dlg.ShowModal()
             dlg.Destroy()
             self.run_button.Enable()
-
 
 
 if __name__ == "__main__":

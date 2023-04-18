@@ -33,18 +33,28 @@ def tokenize(line, pipline):
     return tokens
 
 
+def lemmatize(line, pipline):
+    nlp = pipline
+    doc = nlp(line)
+    tokens_with_lemma = []
+    tokens_with_lemma = ["_".join((word.text, word.lemma))
+                         for sentence in doc.sentences
+                         for word in sentence.words]
+    return tokens_with_lemma
+
+
 def pos_tag(line, pipline, tagset="xpos"):
     nlp = pipline
     doc = nlp(line)
     tokens_with_pos = []
     if tagset == "xpos":
         tokens_with_pos = ["_".join((word.text, word.xpos))
-                           for sent in doc.sentences
-                           for word in sent.words]
+                           for sentence in doc.sentences
+                           for word in sentence.words]
     elif tagset == "upos":
         tokens_with_pos = ["_".join((word.text, word.upos))
-                           for sent in doc.sentences
-                           for word in sent.words]
+                           for sentence in doc.sentences
+                           for word in sentence.words]
     return tokens_with_pos
 
 
@@ -70,6 +80,15 @@ def process_file(source_path, target_path, task, pipeline, tagset="xpos"):
                         else:
                             result = ""
                         target_obj.write(result + "\n")
+        elif task == "lemmatize":
+            with codecs.open(source_path, "r", "utf-8") as source_obj:
+                with codecs.open(target_path, "w", "utf-8") as target_obj:
+                    for each_line in source_obj.readlines():
+                        if each_line:
+                            result = " ".join(lemmatize(each_line, nlp))
+                        else:
+                            result = ""
+                        target_obj.write(result + "\n")
         return True
 
     else:
@@ -90,4 +109,3 @@ def process_dir(source_paths, target_dir, task, pipeline, tagset):
 
 if __name__ == "__main__":
     pass
-

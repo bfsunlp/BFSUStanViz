@@ -53,13 +53,14 @@ Please be noted that the model downloading option is enabled in "settings" menu 
 
 ## Running BFSUStanViz
 
-The current version BFSUStanViz 1.1 support lexical analyzing task such as tokenization and pos tagging, the supported language is keeping updating.
+The current version BFSUStanViz 1.2 support lexical analyzing task such as tokenization and pos tagging, the supported language is keeping updating.
 
 Currently Supported Languages:
 
 ```bash
 "de" ------> [German]
 "en" ------> [English]
+"es" ------> [Spanish]
 "et" ------> [Estonian]
 "fr" ------> [French]
 "it" ------> [Italian]
@@ -87,7 +88,7 @@ To tag all files located in the root of one directory, use:
 python main.py --directory --tokenize --zh --xpos D:\source_dir D:\target_dir
 ```
 
-"--pos" can be replaced with "--tokenize" for tokenization task;
+"--pos" can be replaced with "--tokenize" for tokenization task or "--lemmatize" for lemmatization task.
 
 "--zh" can be replaced with other supported language acronym;
 
@@ -119,11 +120,12 @@ https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu
 ```bash
 2023-03-26 BFSUStanViz v1.0, BFSU Stanza Tagger 1.0. First issue
 2023-03-29 BFSUStanViz v1.1, BFSU Stanza Tagger 1.1. Fix compatability issues, rewrite lexical_analyzer.
+2023-04-18 BFSUStanViz v1.2, BFSU Stanza Tagger 1.2. Add lemmatization module.
 ```
 
 ## References
 
-BFSU Stanza Tagger 1.1 is a Windows GUI wrapper of "stanza" package. This GUI of BFSU Stanza Tagger 1.1 is developed 
+BFSU Stanza Tagger 1.2 is a Windows GUI wrapper of "stanza" package. This GUI of BFSU Stanza Tagger 1.2 is developed 
 by BFSU NLP team of Beijing Foreign Studies University Corpus Research Group and licensed under MIT Licence. 
 
 Copyright © 2022-2023, LIU Dingjia, BFSU NLP Team, BFSU Corpus Group.
@@ -136,9 +138,9 @@ NLP Group. The stanza package is licensed under the Apache License, Version 2.0.
 
 Copyright © 2020 Stanford NLP Group.
 
-If you use either BFSUStanViz or BFSU Stanza Tagger 1.1 in your work, please cite both of the following items:
+If you use either BFSUStanViz or BFSU Stanza Tagger 1.2 in your work, please cite both of the following items:
 
-Dingjia LIU. BFSU Stanza Tagger 1.1. BFSU Corpus Research Group. 2023.
+Dingjia LIU. BFSU Stanza Tagger 1.2. BFSU Corpus Research Group. 2023.
 
 Peng Qi, Yuhao Zhang, Yuhui Zhang, Jason Bolton and Christopher D. Manning. 2020. Stanza: A Python Natural Language
 Processing Toolkit for Many Human Languages. In Association for Computational Linguistics (ACL) System Demonstrations. 2020.
