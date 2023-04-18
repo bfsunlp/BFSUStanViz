@@ -1,0 +1,44 @@
+cd dist
+md BFSU Stanza Tagger 1.2 [ZH]
+cd ..
+pyinstaller zh_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [RU]
+cd ..
+pyinstaller ru_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [RO]
+cd ..
+pyinstaller ro_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [NL]
+cd ..
+pyinstaller nl_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [KO]
+cd ..
+pyinstaller ko_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [JA]
+cd ..
+pyinstaller ja_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [IT]
+cd ..
+pyinstaller it_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [FR]
+cd ..
+pyinstaller fr_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [ET]
+cd ..
+pyinstaller et_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [EN]
+cd ..
+pyinstaller en_tagger_launcher.spec
+cd dist
+md BFSU Stanza Tagger 1.2 [DE]
+cd ..
+pyinstaller de_tagger_launcher.spec

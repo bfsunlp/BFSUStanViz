@@ -23,8 +23,8 @@ from wx.lib.wordwrap import wordwrap
 class App(wx.App):
 
     def OnInit(self):
-        lang = "ko"
-        language = "Korean"
+        lang = "es"
+        language = "Spanish"
         cwd = os.getcwd()
         frame = bst.MainFrame(parent=None, id=-1, lang=lang, language=language, cwd=cwd)
         icon_path = os.path.join(os.path.join(cwd, 'resources/ico'), 'logo.ico')

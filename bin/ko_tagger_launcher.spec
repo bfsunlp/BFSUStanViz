@@ -9,7 +9,7 @@ block_cipher = None
 
 a = Analysis(
     ['ko_tagger_launcher.py'],
-    pathex=['E:\\Pyinstaller\\BFSUStanViz\\bin'],
+    pathex=['', ],
     binaries=[],
     datas=[],
     hiddenimports=[],
@@ -31,7 +31,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='ko_tagger_launcher',
+    name='BFSU Stanza Tagger 1.2 [KO]',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

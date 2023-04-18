@@ -31,7 +31,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='BFSU Stanza Tagger 1.1 [IT]',
+    name='BFSU Stanza Tagger 1.2 [IT]',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

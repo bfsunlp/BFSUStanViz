@@ -8,7 +8,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['et_tagger_launcher.py'],
+    ['es_tagger_launcher.py'],
     pathex=['', ],
     binaries=[],
     datas=[],
@@ -31,7 +31,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='BFSU Stanza Tagger 1.2 [ET]',
+    name='BFSU Stanza Tagger 1.2 [ES]',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

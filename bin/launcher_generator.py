@@ -36,7 +36,11 @@ if __name__ == '__main__':
                       ("fr", "French"),
                       ("it", "Italian"),
                       ("ru", "Russian"),
-                      ("ro", "Romanian"), ],
+                      ("ro", "Romanian"),
+                      ("ja", "Japanese"),
+                      ("zh", "Chinese"),
+                      ("ko", "Korean"),
+                      ("es", "Spanish"), ],
             template="launcher_template.tmp")
 
     pyinspec_gen(lan_list=[("nl", "Dutch"),
@@ -45,5 +49,9 @@ if __name__ == '__main__':
                            ("fr", "French"),
                            ("it", "Italian"),
                            ("ru", "Russian"),
-                           ("ro", "Romanian"), ],
+                           ("ro", "Romanian"),
+                           ("ja", "Japanese"),
+                           ("zh", "Chinese"),
+                           ("ko", "Korean"),
+                           ("es", "Spanish"), ],
                  template="specs_template.tmp")
