@@ -10,7 +10,7 @@
 
 ## Windows Executable Program (!!!)
 
-Now, a Windows executable program "BFSU Stanza Tagger 1.1" has been released. Standalone *.exe and necessary models are included. You may obtain via the baidu netdisk from the following link:
+Now, a Windows executable program "BFSU Stanza Tagger 1.2" has been released. Standalone *.exe and necessary models are included. You may obtain via the baidu netdisk from the following link:
 
 https://pan.baidu.com/s/1bXQiz-DJ1Oz3yW1iIZr4Ng?pwd=bfsu 
 
